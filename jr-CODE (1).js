@@ -1,3 +1,16 @@
+function startButtonClick(){
+    document.getElementById("btnStart").disabled= true;
+    document.getElementById("btnStop").disabled= false;
+
+
+}
+
+function stopButtonClick(){
+    document.getElementById("btnStart").disabled = false;
+    document.getElementById("btnStop").disabled = true;
+
+}
+
 //Alert Text that strings a notification five times
 // the counter "i" is just variable for a counter
 function displayAlert(alertText){
