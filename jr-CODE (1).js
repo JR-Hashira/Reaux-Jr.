@@ -38,3 +38,27 @@ else{
 Timeout = Timeout + 1000;
 }
 }
+
+function getInput(y) {
+
+do{
+    Firstname = prompt ("Please deposit your name");
+    Lastname = prompt ("Please desposit, please deposit last name");
+    Fullname = Firstname + " " + Lastname; // Making sure that both first and last are total to the passwords
+    if(Fullname.length > 20){
+        alert("DIDN'T DEPOSIT RIGHT COINAGE PLEASE TRY AGAIN,PLEASE DEPOSIT. PLEASE DEPOSIT")
+    }
+    while(Fullname.length > 20) // A way to break out of the loop
+
+    do{
+        BadgeHashtag = prompt("Please insert the correct code or else!");
+
+        if(BadgeHashtag > 1000){// This mean that any number below 1000 is safe to use
+            alert("I WILLL ASK ONCE AGAIN, PLEASE INSERT THE CORRECT CODE OR ELSE");
+
+        } 
+    }
+    while(BadgeHashtag > 1000) // just like line 51
+
+
+}
