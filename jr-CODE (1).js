@@ -1,13 +1,20 @@
+var intervalIds = new Array();
+
 function startButtonClick(){
     document.getElementById("btnStart").disabled= true;
     document.getElementById("btnStop").disabled= false;
 
+    runTimer(document.getElementById("DisplayCountdown"));
 
 }
 
 function stopButtonClick(){
     document.getElementById("btnStart").disabled = false;
     document.getElementById("btnStop").disabled = true;
+
+    for(i=0; i < 11; i++){
+        clearTimeout(intervalIds[i]);
+    }
 
 }
 
@@ -25,14 +32,14 @@ function displayAlert(alertText){
     }
 
 // Runtime is where it's stores my countdown sequence
-function runtime(x) {   
+function runTimer(x) {   
 //This is the start of JavaScript Comment
 CurrTime = 50;
 //The number my timer starts at
 var Timeout = 1000;
 //How long before each change in the timer, 5000 miliseconds
 for(i=0; i < 11; i++){
-setTimeout(function(){
+    intervalIds[i] = setTimeout(function(){
 //Currtime will be decreasing by 5 seconds each time
     if(CurrTime == 0){
     x.innerHTML = CurrTime
@@ -52,7 +59,7 @@ Timeout = Timeout + 1000;
 }
 }
 
-function getInput(y) {
+function getInput() {
 
 do{
     Firstname = prompt ("Please deposit your name");
@@ -61,7 +68,8 @@ do{
     if(Fullname.length > 20){
         alert("DIDN'T DEPOSIT RIGHT COINAGE PLEASE TRY AGAIN,PLEASE DEPOSIT. PLEASE DEPOSIT")
     }
-    while(Fullname.length > 20) // A way to break out of the loop
+}
+    while(Fullname.length > 20); // A way to break out of the loop
 
     do{
         BadgeHashtag = prompt("Please insert the correct code or else!");
@@ -70,8 +78,7 @@ do{
             alert("I WILLL ASK ONCE AGAIN, PLEASE INSERT THE CORRECT CODE OR ELSE");
 
         } 
-    }
-    while(BadgeHashtag > 1000) // just like line 51
+    } while(BadgeHashtag > 1000); // just like line 51
 
 
 }
