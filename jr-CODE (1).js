@@ -1,19 +1,19 @@
 var intervalIds = new Array();
 
-function startButtonClick(){
+function startButtonClick(){ // When someone clicks the start button the stop button function is disabled.
     document.getElementById("btnStart").disabled= true;
     document.getElementById("btnStop").disabled= false;
 
-    runTimer(document.getElementById("DisplayCountdown"));
+    runTimer(document.getElementById("DisplayCountdown")); //starts the timer
 
 }
 
-function stopButtonClick(){
+function stopButtonClick(){ // When someone clicks the stop button the start button function is disabled.
     document.getElementById("btnStart").disabled = false;
     document.getElementById("btnStop").disabled = true;
 
     for(i=0; i < 11; i++){
-        clearTimeout(intervalIds[i]);
+        clearTimeout(intervalIds[i]); //pause
     }
 
 }
