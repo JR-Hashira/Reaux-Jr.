@@ -62,10 +62,10 @@ Timeout = Timeout + 1000;
 function getInput() {
 
 do{
-    Firstname = prompt ("Please deposit your name");
-    Lastname = prompt ("Please desposit, please deposit last name");
+    Firstname = prompt ("Please deposit your name"); // Part one of my passkey(only has to limit under 20 character)
+    Lastname = prompt ("Please desposit, please deposit last name"); // Part two of my passkey(only has to limit under 20 character)
     Fullname = Firstname + " " + Lastname; // Making sure that both first and last are total to the passwords
-    if(Fullname.length > 20){
+    if(Fullname.length > 20){           // Explainingthat my charater limit can't surpass 20 unless the passcode will be deemed invalid
         alert("DIDN'T DEPOSIT RIGHT COINAGE PLEASE TRY AGAIN,PLEASE DEPOSIT. PLEASE DEPOSIT")
     }
 }
@@ -78,7 +78,7 @@ do{
             alert("I WILLL ASK ONCE AGAIN, PLEASE INSERT THE CORRECT CODE OR ELSE");
 
         } 
-    } while(BadgeHashtag > 1000); // just like line 51
+    } while(BadgeHashtag > 1000); // The bagde number can't surpass the number 1000 unless the passcode will be deem invalid
 
 
 }
