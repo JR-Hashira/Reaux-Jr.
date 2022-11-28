@@ -1,4 +1,9 @@
-<!doctype html> <!--Telling the user what type of document we are running-->
+<!DOCTYPE html>
+<html>
+
+<body onload="startTime()">
+
+<h2>JavaScript Clock</h2><!doctype html> <!--Telling the user what type of document we are running-->
 <html> 
   
     <head>
@@ -13,10 +18,6 @@
         </style>
     </head>
       
-      <body 
-        style="color: aquamarine;"
-            onload="startTime()">
-        <div id= "clock"></div>
         
           <script>
 function startTime() {
@@ -36,6 +37,10 @@ function checkTime(i) {
 }
 </script>
          <!--The color change for my subtext-->
+         <body 
+        style="color: aquamarine;"
+            onload="startTime()">
+        <div id= "clock"></div>
       <h1 style= "color:rgb(219, 0, 208)">Why is Anime Important(God?)</h1><!--The color change for my header-->
         <img src= "pepelore.jfif"> <!--Finds the image source to have the image appear-->
         <!--The text paragraph-->
@@ -48,7 +53,7 @@ function checkTime(i) {
             <source src = "Samurai Slice That Like Button.mp3" type ="audio/mpeg"> <!--This is the source call for my sound, labeling it as an audio type-->
         </audio>
         Click me</button>
-    
+    <br>
 <!--Html Comment-->
      <input type = "button" id  = "btnStart" value = "Start" onClick="startButtonClick();"/> <!--Start button call-->
 <input type = "button" id = "btnStop" value = "Stop" disabled = "true" onClick="stopButtonClick();"/> <!-- Stop button call-->
@@ -70,3 +75,27 @@ Countdown: <span id="DisplayCountdown"> Rocket Ready?</span>
 
    </script>
    <!--This value to call upon the jc code page to start my countdown-->
+
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+</html>
