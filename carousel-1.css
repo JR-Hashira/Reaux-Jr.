@@ -69,8 +69,8 @@ body {
 
 .slide:nth-child(1) {
     /* add the file name of an image inside the " " to set a background image */
-    background-image: url("https://github.com/JR-Hashira/Reaux-Jr./blob/main/12872_2022-12-03_11-46-55_01.jpg");
-    background-color: #49b293;
+   background-image: img src= "20220130-Jerome Senior Pix-9761.jpg";
+   background-color: #49b29263;
 }
 
 .slide:nth-child(2) {
