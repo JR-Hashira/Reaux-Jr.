@@ -68,7 +68,7 @@ body {
 
 .slide:nth-child(1) {
     /* add the file name of an image inside the " " to set a background image */
-    background-image: url("12872_2022-12-03_11-46-55_01.jpg");
+    background-image: url("12872_2022-12-03_11-46-55_01.jpg")width= "1400px;
     background-color: #49b29263;
 }
 
@@ -87,6 +87,6 @@ body {
 
 .slide:nth-child(4) {
     /* add the file name of an image inside the " " to set a background image */
-    background-image: url("IMG_20220814_191821_240.webp");
+    background-image: url("IMG_20220814_191821_240.webp") height= "calc(100vh - 2rem)";
   background-color: #da6f2b;
 }
