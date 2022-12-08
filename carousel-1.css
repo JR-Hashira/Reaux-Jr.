@@ -64,30 +64,29 @@ body {
   height: 100%;
   flex: 1 0 100%;
 }
-
 /* feel free to modify the classes below to style the slides as you like */
 
 .slide:nth-child(1) {
     /* add the file name of an image inside the " " to set a background image */
-   background-image: img src= "20220130-Jerome Senior Pix-9761.jpg";
-   background-color: #49b29263;
+    background-image: url("12872_2022-12-03_11-46-55_01.jpg");
+    background-color: #49b29263;
 }
 
 .slide:nth-child(2) {
     /* add the file name of an image inside the " " to set a background image */
-    background-image: url("https://github.com/JR-Hashira/Reaux-Jr./blob/main/IMG_20220527_100859_034.jpg");
+    background-image: url("20220130-Jerome Senior Pix-9761.jpg");
   background-color: #b03532;
 }
 
 .slide:nth-child(3) {
     /* add the file name of an image inside the " " to set a background image */
-    background-image: url("https://github.com/JR-Hashira/Reaux-Jr./blob/main/20220130-Jerome%20Senior%20Pix-9761.jpg");
+    background-image: url("IMG_20220527_100859_034.jpg");
   background-color: #6a478f;
   margin: 0;
 }
 
 .slide:nth-child(4) {
     /* add the file name of an image inside the " " to set a background image */
-    background-image: url("https://github.com/JR-Hashira/Reaux-Jr./blob/main/IMG_20220814_191821_240.webp");
+    background-image: url("IMG_20220814_191821_240.webp");
   background-color: #da6f2b;
 }
